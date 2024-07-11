@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basmala</title>
+</head>
+<body>
+    <input type="number" id="n1">
+    <input type="number" id="n2">
+    <input type="number" id="n3">
+    <button onclick= "alert(b('n1','n2','n3'))">calculter</button>
+    <script>
+      //  function b(a =1,s =3,m =4){
+           // var a = 5;
+            //var s = 9;
+            //var m = 3;
+            //var l = s+m*(a+m);
+        
+          // return(l);
+       // }
+       function b (a,s,d){
+        a = document.getElementById(a).value;
+        s = document.getElementById(s).value;
+        d = document.getElementById(d).value;
+
+
+        var l = parseInt(s)+parseInt(d)*(parseInt(a)+parseInt(d));
+        return(l)
+       }
+
+        //alert(b(3,2,6));
+        //console.log(b(5,8,2));
+        //console.log(b())
+
+    </script>
+</body>
+</html>
